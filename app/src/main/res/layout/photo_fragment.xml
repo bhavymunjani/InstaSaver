@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#363636">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:id="@+id/component">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:textColorHint="@color/white"
+            android:hint="Enter the link hear"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:id="@+id/getphotolink">
+        </EditText>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/getphoto"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:background="@drawable/buttonbg"
+            android:text="Get Content">
+        </androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/component"
+        android:layout_above="@+id/downloadphoto"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fitsSystemWindows="true"
+            android:layout_gravity="center"
+            android:id="@+id/particulerphoto"
+            android:layout_marginBottom="5dp"
+            android:layout_margin="20dp">
+        </ImageView>
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/downloadphoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttonbg"
+        android:text="Download"
+        android:textColor="@color/white"
+        android:textSize="13sp"></androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>
